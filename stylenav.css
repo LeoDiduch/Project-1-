@@ -1,0 +1,31 @@
+nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    width: 100%;
+    background-color: #f99797;
+    justify-content: space-between;
+}
+
+#menu {
+    display: inline-flex;
+    float: right;
+    justify-content: space-between;
+    width: 15%;
+}
+
+footer {
+    display: flex;
+    background-color: #f99797;
+    height: 70px;
+    justify-content: space-between;
+}
+
+#footerlink {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    width: 10%;
+}
