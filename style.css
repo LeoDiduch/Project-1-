@@ -113,6 +113,8 @@
     }
 
     footer {
+        display: flex;
+        flex-direction: column;
         height: auto;
         background: linear-gradient(white, #f99797);
         text-align: center;
