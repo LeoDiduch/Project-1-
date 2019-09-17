@@ -1,0 +1,77 @@
+* {
+    font-size: 16px;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* ----------- Responsive desktop ------------*/
+
+@media screen and (min-width: 961px) {
+    
+    a:hover {
+        background: linear-gradient(#f99797, white);
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .menu h1 {
+        font-size: 2rem;
+        padding: 20px 0 0 30px;
+    }
+
+    .menu {
+        display: flex;
+        background: linear-gradient(#f99797, white);
+    }
+
+    body div nav ul li {
+        list-style-type: none;
+        padding: 0.5rem;
+    }
+
+    .btn {
+        background: linear-gradient(white, #f99797);
+        border-radius: 1rem;
+        width: auto;
+        padding: 0.2rem;
+        text-align: center;
+        float: right;
+    }
+
+    .menu nav {
+        padding: 5px;
+        width: 300px;
+        margin-right: 1%;
+        margin-top: 1%;
+    }
+
+    #pseudo {
+        height: 25px;
+    }
+
+    #motDePasse {
+        height: 25px;
+    }
+
+    .caroussel {
+        width: 90%;
+        height: 10rem;
+    }
+
+    .new-sub {
+        height: 20rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        background: linear-gradient(white, #f99797);
+        text-align: center;
+    }
+
+}
