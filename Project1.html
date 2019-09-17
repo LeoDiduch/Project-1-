@@ -15,6 +15,11 @@
     <main>
       <div class="Recherche">
 
+         <input type="text" value="Ville" onfocus="if (this.value == 'Ville') this.value = '';"
+ onblur="if (this.value == '') this.value = 'Ville';" />
+            
+         <p></p>
+
          <select name="Tranches d'âges" class="TranchesDages">
           <option>Tranche d'âge</option>
           <option>18-30</option>
@@ -46,8 +51,7 @@
          </select>
 
         <p></p>
-
-        <div class="centres"></div>   
+ 
         <label for="Centres">Centres d'intérêts:</label>
         <input id="Centres" type="text"/>
 
