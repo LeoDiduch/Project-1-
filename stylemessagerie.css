@@ -114,16 +114,17 @@ nav ul ul {
 /*barre de contact*/
 
 #contact {
-    float: right;
+    float: left;
     height: 100%;
     border-style: solid;
     border-width: 1px 1px 0 1px;
-    width: 10%;
+    width: 20%;
 }
 
 #contact ul {
     margin-top: 50px;
     padding: 0px;
+    font-size: 2vw;
 }
 
 #contact ul li {
@@ -150,10 +151,46 @@ nav ul ul {
     bottom: 10px;
 }
 
+
+
+
+/*messagerie*/
+
+textarea {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#discussion {
+    padding-top:5vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#discussion span {
+    margin-top: 2vh;
+}
+
+.envoi {
+    background-color: #ebdfdf;
+    border-radius: 4%;
+    justify-content: flex-end;
+}
+
+.reçu {
+    background-color: #f99797;
+    border-radius: 4%;
+}
+
+
+
+
 /*footer*/
 
 footer {
-    display: flex;
+    display: none;
     background-color: #f99797;
     height: 7vh;
     justify-content: space-between;
@@ -189,15 +226,3 @@ footer img {
     padding: 10px;
 }
 
-
-@media only screen and (max-width: 961px) {
-
-#contact {
-    display: none;
-}
-
-#burger li:nth-child(3) {
-    display: flex
-}
-
-}
