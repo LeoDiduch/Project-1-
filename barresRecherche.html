@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styleRecherche.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    
+    <main>
+      <div class="Recherche">
+
+         <input type="text" value="Ville" onfocus="if (this.value == 'Ville') this.value = '';"
+ onblur="if (this.value == '') this.value = 'Ville';" />
+            
+         <p></p>
+
+         <select name="Tranches d'âges" class="TranchesDages">
+          <option>Tranche d'âge</option>
+          <option>18-30</option>
+          <option>31-45</option>
+          <option>46-60</option>
+          <option>61+</option> 
+         </select>
+
+        <p></p>
+
+
+         <select name="langages" class="langages">
+          <option>Langages</option>
+          <option>HTML</option>
+          <option>CSS</option>
+          <option>Javascript</option>
+          <option>PHP</option>
+          <option>Autres...</option>
+         </select>
+
+        <p></p>
+        
+
+         <select name="compétences" class="competences">
+          <option>Compétences</option>
+          <option>UX design</option>
+          <option>Gestion de projet</option>
+          <option>Rédaction de cahier des charges</option>
+         </select>
+
+        <p></p>
+ 
+        <label for="Centres">Centres d'intérêts:</label>
+        <input id="Centres" type="text"/>
+
+      <p></p>
+      <a href="ResultatRecherche" target="_blank"> <input type="button" value="Rechercher" class="boutonRecherche"> </a>
+      </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>
