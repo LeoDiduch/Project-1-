@@ -1,9 +1,16 @@
 * {
     font-size: 16px;
-    width: 100%;
     padding: 0;
     box-sizing: border-box;
     margin: 0;
+}
+
+#milieupage {
+    background: linear-gradient(lightcyan, white, lightcyan);
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
 }
 
 /* ----------- Responsive desktop ------------*/
@@ -25,10 +32,12 @@
 
     .menu {
         display: flex;
+        justify-content: space-between;
         background: linear-gradient(#f99797, white);
     }
 
     body div nav ul li {
+        text-align: end;
         list-style-type: none;
         padding: 0.5rem;
     }
@@ -44,9 +53,7 @@
 
     .menu nav {
         padding: 5px;
-        width: 300px;
-        margin-right: 1%;
-        margin-top: 1%;
+        width: auto;
     }
 
     #pseudo {
@@ -66,6 +73,7 @@
         margin-top: 1rem;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 2rem;
         text-align: center;
         background: linear-gradient(white, #f99797);
     }
@@ -108,9 +116,60 @@
     }
 
 
-/*----------------------------------*/
+/*-------------ANCIEN MEMBRE---------------------*/
 
 
+    #milieupage h2 {
+        margin-top: 5rem;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .profil{
+        margin-left: auto;
+        margin-right: auto;
+        background: linear-gradient(white, #f99797);
+        display: flex;   
+        margin-bottom:50px;
+        width: 80%;
+        margin-top:50px;
+        border: #f99797 1px solid;
+        box-shadow: #f99797 5px 5px;
+        border-radius: 52%;
+    }
+
+    .avatar img {
+        height: 30vh;
+        border-radius: 50%;
+        
+    }
+
+    #descrip {
+        color : white;
+        display: block;
+        height: 30vh;
+        width: 50%;
+        margin-left: 7%;
+        margin-right: 5%;
+    }
+
+    h2 i {
+        display: flex;
+        font-style: normal;
+        font-size: 50px;
+        margin-left: 5%;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        
+    }
+
+    h3 {
+        font-style: italic;
+        font-size: 25px;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-left: 2%;
+    }
 
     footer {
         display: flex;
@@ -120,4 +179,197 @@
         text-align: center;
     }
 
+    footer ul li {
+        margin-bottom: 0.5rem;
+    }
+
 }
+
+/*--------- RESPONSIVE PETIT ECRAN----------------------*/
+
+
+@media screen and (max-width: 960px) {
+
+    a:hover {
+        background: linear-gradient(#f99797, white);
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .menu h1 {
+        font-size: 2rem;
+        padding: 20px 0 0 30px;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        background: linear-gradient(#f99797, white);
+    }
+
+    body div nav ul li {
+        text-align: end;
+        list-style-type: none;
+        padding: 0.5rem;
+    }
+
+    .btn {
+        background: linear-gradient(white, #f99797);
+        border-radius: 1rem;
+        width: auto;
+        padding: 0.2rem;
+        text-align: center;
+        float: right;
+    }
+
+    .menu nav {
+        padding: 5px;
+        width: auto;
+    }
+
+    #pseudo {
+        height: 25px;
+        width: 50%;
+    }
+
+    #motDePasse {
+        height: 25px;
+        width: 48%;
+    }
+
+/*--------- SLIDER -------------------*/
+
+    #slider {
+        width: 30vh;
+        height: 50vh;
+        overflow: hidden;
+        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+        text-align: center;
+        background: linear-gradient(white, #f99797);
+    }
+
+    #slider h2 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        padding: 0;
+        font-size: 0;
+        text-align: left;
+        animation: slidy 10s infinite;
+    }
+
+    #slider figure img {
+        border-radius: 50%;
+        width: 20%;
+        height: auto;
+        float: left;
+        object-fit: cover;
+    }
+
+    /*----ANIMATION SLIDER ------- */
+
+    @keyframes slidy {
+        0% {left: 0%; }
+        20% {left: 0%; }
+        25% {left: -100%; }
+        45% {left: -100%; }
+        50% {left: -200%; }
+        70% {left: -200%; }
+        75% {left: -300%; }
+        95% {left: -300%; }
+        100% {left: -400%; }
+    }
+
+
+/*-------------ANCIEN MEMBRE---------------------*/
+
+
+
+
+    .profil{
+        margin-left: auto;
+        margin-right: auto;
+        background: linear-gradient(white, #f99797);
+        display: flex; 
+        flex-direction: column;  
+        margin-bottom:50px;
+        width: 80%;
+        margin-top:50px;
+        border: #f99797 1px solid;
+        box-shadow: #f99797 5px 5px;
+        border-radius: 52%;
+        text-align: center;
+    }
+
+    .avatar {
+        display: flex;
+        justify-content: center;
+    }
+
+    .avatar img {
+        height: 30vh;
+        border-radius: 50%;
+        
+    }
+
+    #descrip {
+        color : white;
+        display: block;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .pseudo-avatar {
+        margin-top: 0px;
+        font-size: 2rem;
+    }
+
+    .titre-milieuPage {
+        margin-top: 2px;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    h2 i {
+        display: flex;
+        font-style: normal;
+        font-size: 50px;
+        margin-left: 5%;
+        margin-block-end: 0.83em;
+        
+    }
+
+    h3 {
+        font-style: italic;
+        font-size: 25px;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-left: 2%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        background: linear-gradient(white, #f99797);
+        text-align: center;
+    }
+
+    footer ul li a {
+        padding: 0.7rem;
+    }
+}
+
+
+
