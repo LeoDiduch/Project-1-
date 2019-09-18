@@ -175,13 +175,18 @@ textarea {
 
 .envoi {
     background-color: #ebdfdf;
-    border-radius: 4%;
+    border-radius: 8%;
     justify-content: flex-end;
+    width: 30%;
+    padding: 2%;
 }
 
 .reçu {
     background-color: #f99797;
-    border-radius: 4%;
+    border-radius: 8%;
+    float: right;
+    width: 30%;
+    padding: 2%;
 }
 
 
