@@ -4,19 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styleBarresRecherche.css">
     <link rel="stylesheet" href="stylenav.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <title>Document</title>
+
+
 </head>
-
-
-
-
-
 <body>
-
-
-
     <header>
 
 
@@ -26,7 +21,7 @@
         </ul>
 
         <ul id="menu">
-            <li><a href="Home.html">Home</a></li>
+            <li><a href="home.html">Home</a></li>
             <li><a href="barreRecherche.html">Search</a></li>
             <li>Burger
                 <ul id="burger">
@@ -43,11 +38,65 @@
     </nav>
 
     </header>
+    
 
 
 
 
-    <div id="contact">
+    <main>
+
+   <div id="boxrecherche">
+    
+      <div class="Recherche">
+
+         <input class="Centres" type="text" value="Ville" onfocus="if (this.value == 'Ville') this.value = '';"
+ onblur="if (this.value == '') this.value = 'Ville';" />
+            
+         <p></p>
+
+         <select name="Tranches d'âges" class="TranchesDages">
+          <option>Tranche d'âge</option>
+          <option>18-30</option>
+          <option>31-45</option>
+          <option>46-60</option>
+          <option>61+</option> 
+         </select>
+
+        <p></p>
+
+
+         <select name="langages" class="langages">
+          <option>Langages</option>
+          <option>HTML</option>
+          <option>CSS</option>
+          <option>Javascript</option>
+          <option>PHP</option>
+          <option>Autres...</option>
+         </select>
+
+        <p></p>
+        
+
+         <select name="compétences" class="competences">
+          <option>Compétences</option>
+          <option>UX design</option>
+          <option>Gestion de projet</option>
+          <option>Rédaction de cahier des charges</option>
+         </select>
+
+        <p></p>
+ 
+        <label for="Centres">Centres d'intérêts:</label>
+        <input class="Centres" type="text"/>
+
+      <p></p>
+      <a href="ResultatRecherche" target="_blank"> <input type="button" value="Rechercher" class="boutonRecherche"> </a>
+
+      </div>
+
+    </div>
+
+ <div id="contact">
         <ul>
             <li><span class="center">jean patrick</span> <img src="https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/17626096_1123132934465589_5087028253921373571_n.jpg?_nc_cat=108&_nc_oc=AQn372nL-XcWXjTMv1BoY2DD8DpT7vMWJhzDqG3Mj_9SVfzhAOQ7ljgs950aPZi77jM&_nc_ht=scontent-frx5-1.xx&oh=337dd72beb2e70fafa0bcaa1f4a7c10c&oe=5E08FE47" alt=""></li>
             <li><span class="center">Wilderdu17</span><img src="" alt=""></li>
@@ -59,9 +108,18 @@
             <li><span class="center">jean louis</span><img src="" alt=""></li>
             <li><span class="center">bogossdu17</span><img src="" alt=""></li>
             <li><span class="center">Батюшка</span><img src="" alt=""></li>
+            
         </ul>
         <input id="recherche" type="type here" placeholder="recherche">
     </div>
+
+
+    </main>
+
+
+
+
+
 
 
 
@@ -90,10 +148,6 @@
 
 
     </footer>
-
-
-
-
 
 </body>
 </html>
