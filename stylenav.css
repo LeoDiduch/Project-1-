@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Raleway', sans-serif;
+    background-color: #ce6f5e23;
 }
 
 li {
@@ -19,6 +20,11 @@ a {
 
 body {
     margin: 0px;
+    height: 100vh;
+    font-size: 2vh;
+}
+
+main {
     height: 100vh;
 }
 
@@ -48,10 +54,10 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #f99797;
     justify-content: space-between;
     height: 5vh;
     z-index: 2;
+    background-color: #ce6e5ec0;
 }
 
 nav ul {
@@ -64,7 +70,7 @@ nav ul li {
 }
 
 nav ul li:hover {
-    background-color: #ffc5c565;
+    background-color: #ce6e5ec0;
 }
 
 #menu {
@@ -80,7 +86,7 @@ nav ul li:hover {
 
 #burger {
 	display:none;
-    background-color: #f99797;
+    background-color: #ce6e5ec0;
     padding: 0;
     border-width: 10px;
 }
@@ -158,7 +164,7 @@ nav ul ul {
 
 footer {
     display: flex;
-    background-color: #f99797;
+    background-color: #ce6e5ec0;
     justify-content: space-between;
     position: relative;
     bottom: 0;

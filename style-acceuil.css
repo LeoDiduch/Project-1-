@@ -3,10 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Raleway', sans-serif;
 }
 
 #milieupage {
-    background: linear-gradient(lightcyan, white, lightcyan);
     border-bottom-left-radius: 20%;
     border-bottom-right-radius: 20%;
     border-top-left-radius: 20%;
@@ -18,7 +18,7 @@
 @media screen and (min-width: 961px) {
     
     a:hover {
-        background: linear-gradient(#f99797, white);
+        background-color: #ce6e5ec0;
     }
 
     a {
@@ -28,12 +28,13 @@
     .menu h1 {
         font-size: 2rem;
         padding: 20px 0 0 30px;
+        font-weight: 50;
     }
 
     .menu {
         display: flex;
         justify-content: space-between;
-        background: linear-gradient(#f99797, white);
+        background-color: #ce6e5ec0;
     }
 
     body div nav ul li {
@@ -43,7 +44,7 @@
     }
 
     .btn {
-        background: linear-gradient(white, #f99797);
+        background: linear-gradient(white, #ce6e5ec0);
         border-radius: 1rem;
         width: auto;
         padding: 0.2rem;
@@ -64,6 +65,9 @@
         height: 25px;
     }
 
+    .titre-milieuPage {
+        font-weight: 100;
+    }
 /*--------- SLIDER -------------------*/
 
     #slider {
@@ -75,12 +79,15 @@
         margin-right: auto;
         margin-bottom: 2rem;
         text-align: center;
-        background: linear-gradient(white, #f99797);
+        background: linear-gradient(white, #ce6e5ec0);
+
+        
     }
 
     #slider h2 {
         font-size: 2rem;
         margin-bottom: 0.5rem;
+        font-weight: 100;
     }
 
     #slider figure {
@@ -128,13 +135,13 @@
     .profil{
         margin-left: auto;
         margin-right: auto;
-        background: linear-gradient(white, #f99797);
+        background: linear-gradient(white, #ce6e5ec0);
         display: flex;   
         margin-bottom:50px;
         width: 80%;
         margin-top:50px;
-        border: #f99797 1px solid;
-        box-shadow: #f99797 5px 5px;
+        border: #ce6e5ec0 1px solid;
+        box-shadow: #ce6e5ec0 5px 5px;
         border-radius: 52%;
     }
 
@@ -169,13 +176,14 @@
         margin-block-start: 1em;
         margin-block-end: 1em;
         margin-left: 2%;
+        font-weight: 50;
     }
 
     footer {
         display: flex;
         flex-direction: column;
         height: auto;
-        background: linear-gradient(white, #f99797);
+        background-color: #ce6e5ec0;
         text-align: center;
     }
 
@@ -191,7 +199,7 @@
 @media screen and (max-width: 960px) {
 
     a:hover {
-        background: linear-gradient(#f99797, white);
+        background: linear-gradient(#ce6e5ec0, white);
     }
 
     a {
@@ -206,7 +214,7 @@
     .menu {
         display: flex;
         justify-content: space-between;
-        background: linear-gradient(#f99797, white);
+        background-color: #ce6e5ec0;
     }
 
     body div nav ul li {
@@ -216,7 +224,7 @@
     }
 
     .btn {
-        background: linear-gradient(white, #f99797);
+        background: linear-gradient(white, #ce6e5ec0);
         border-radius: 1rem;
         width: auto;
         padding: 0.2rem;
@@ -250,7 +258,7 @@
         margin-right: auto;
         margin-bottom: 2rem;
         text-align: center;
-        background: linear-gradient(white, #f99797);
+        background: linear-gradient(white, #ce6e5ec0);
     }
 
     #slider h2 {
@@ -299,14 +307,14 @@
     .profil{
         margin-left: auto;
         margin-right: auto;
-        background: linear-gradient(white, #f99797);
+        background: linear-gradient(white, #ce6e5ec0);
         display: flex; 
         flex-direction: column;  
         margin-bottom:50px;
         width: 80%;
         margin-top:50px;
-        border: #f99797 1px solid;
-        box-shadow: #f99797 5px 5px;
+        border: #ce6e5ec0 1px solid;
+        box-shadow: #ce6e5ec0 5px 5px;
         border-radius: 52%;
         text-align: center;
     }
@@ -339,6 +347,7 @@
         margin-top: 2px;
         text-align: center;
         font-size: 3rem;
+        font-weight: 100;
     }
 
     h2 i {
@@ -362,7 +371,7 @@
         display: flex;
         flex-direction: column;
         height: auto;
-        background: linear-gradient(white, #f99797);
+        background-color: #ce6e5ec0;
         text-align: center;
     }
 

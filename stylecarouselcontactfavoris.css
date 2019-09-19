@@ -1,7 +1,6 @@
 div#slider {
      width: 80%;
      max-width: 1000px; 
-     height: ;
 }
 div#slider div {
     position: relative; 
@@ -22,6 +21,7 @@ div#slider div article img{
     width: 100%;
     display: block;
     border-radius: 100px;
+    object-fit: cover;
 }
 
 div#slider div article h2 {
