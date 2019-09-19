@@ -1,28 +1,123 @@
-
-/* Image ronde */ 
-img{     
-    width: 300px;     
-    height: 300px;    
-    border-radius: 200px; 
- }
-
-.image{
-  display:inline-block;
-  float: left; 
-  align-items: center;
-
+* {
+    font-size: 16px;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
 }
 
-.image-item{
-    width: 200x;
-    height: 200px;
+/* ----------- Responsive desktop ------------*/
 
-}
-
-.image-description{
-    color: #f99797
+@media screen and (min-width: 961px) {
     
+    a:hover {
+        background: linear-gradient(#f99797, white);
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .menu h1 {
+        font-size: 2rem;
+        padding: 20px 0 0 30px;
+    }
+
+    .menu {
+        display: flex;
+        background: linear-gradient(#f99797, white);
+    }
+
+    body div nav ul li {
+        list-style-type: none;
+        padding: 0.5rem;
+    }
+
+    .btn {
+        background: linear-gradient(white, #f99797);
+        border-radius: 1rem;
+        width: auto;
+        padding: 0.2rem;
+        text-align: center;
+        float: right;
+    }
+
+    .menu nav {
+        padding: 5px;
+        width: 300px;
+        margin-right: 1%;
+        margin-top: 1%;
+    }
+
+    #pseudo {
+        height: 25px;
+    }
+
+    #motDePasse {
+        height: 25px;
+    }
+
+/*--------- SLIDER -------------------*/
+
+    #slider {
+        width: 30vh;
+        height: 50vh;
+        overflow: hidden;
+        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    #slider h2 {
+        font-size: 2rem;
+    }
+
+    #slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        padding: 0;
+        font-size: 0;
+        text-align: left;
+        animation: slidy 10s infinite;
+    }
+
+    #slider figure img {
+        border-radius: 50%;
+        width: 20%;
+        height: auto;
+        float: left;
+        object-fit: cover;
+    }
+
+    /*----ANIMATION SLIDER ------- */
+
+    @keyframes slidy {
+        0% {left: 0%; }
+        20% {left: 0%; }
+        25% {left: -100%; }
+        45% {left: -100%; }
+        50% {left: -200%; }
+        70% {left: -200%; }
+        75% {left: -300%; }
+        95% {left: -300%; }
+        100% {left: -400%; }
+    }
+
+
+/*----------------------------------*/
+
+    .new-sub {
+        height: 20rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        background: linear-gradient(white, #f99797);
+        text-align: center;
+    }
+
 }
-
-
-  
