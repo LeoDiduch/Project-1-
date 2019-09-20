@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+@media screen and (min-width: 360px){
+.profil{
+    display: flex;
+    margin-bottom:30px;
+    margin-left:100px;
+    margin-top:50px;
+    
+}
+
+#contenu {
+    margin: 5%;
+}
+
+#milieupage {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    margin-left: auto;
+    margin-right: auto;
+}
+.avatar img {
+    height: 30vh;
+    border-radius: 50%;
+    
+}
+#descrip {
+    background: linear-gradient(#ce6f5e27,rgb(252, 123, 91));
+    color : white;
+    display: block;
+    height: 30vh;
+    width: 50%;
+    margin-left: 7%;
+    margin-right: 5%;
+   
+}
+h2 i {
+    display: flex;
+    font-style: normal;
+    font-size: 50px;
+    margin-left: 5%;
+    margin-block-start: 0.83em;
+    
+    
+}
+h3 {
+    font-style: italic;
+    font-size: 100%;
+    margin-block-start: 1em;
+    margin-block-end: 3em;
+    margin-left: 2%;
+}
+button {
+    display: flex;
+    flex-direction: row-reverse nowrap;
+    float : right;
+    margin-right: 5%;
+}
+}
+@media screen and (max-width: 360px) {
+#milieupage{
+    width:auto;
+    height:auto;
+    margin:10%;
+}
+.profil{
+    margin-left:5%;
+    margin-right:5%;
+    margin-bottom: 10%;
+    margin-top:10%;
+    align-items: stretch;
+}
+.avatar img{
+    height: 20vh;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#descrip {
+    height: 40%;
+    display: block;
+    flex-wrap: wrap;
+    background: linear-gradient(#ce6f5e27, rgb(252, 123, 91));
+    color: white;
+    margin-left: 7%;
+    margin-right: 5%;  
+}
+h2 i{ 
+    font-size: 40px;
+    margin-top: 5%;
+}
+h3 {
+    font-size: 1rem;
+    margin-left: 2%;
+}
+button {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 5%;
+    float: right;
+}
+}
