@@ -86,7 +86,7 @@ nav ul li:hover {
 
 #burger {
 	display:none;
-    background-color: #ce6e5ec0;
+    background-color: #ce6f5e;
     padding: 0;
     border-width: 10px;
 }
@@ -164,7 +164,7 @@ nav ul ul {
 
 footer {
     display: flex;
-    background-color: #ce6e5ec0;
+    background-color: #ce6f5e;
     justify-content: space-between;
     position: relative;
     bottom: 0;
