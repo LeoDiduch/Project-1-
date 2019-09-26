@@ -6,6 +6,9 @@
     margin-left: 25%;
 }
 
+main {
+    height: 100vh;
+}
 .Recherche{
     display: flex;
     flex-direction:column;

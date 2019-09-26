@@ -1,3 +1,7 @@
+<?php
+require_once 'profil.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,17 +45,41 @@
 <body>
     <div id="contenu">
         <div id="milieu de page">
+
+            <?php
+                foreach ($profils as $pseudo => $contenu) {
+            ?>
+
+            <div class="profil">
+                <div class="avatar">
+                    <img src="<?= $contenu[0]?>" alt="">
+                </div>
+                <div id="descrip">
+                    <h2><i><?= $pseudo ?></i></h2>
+                    <h3>
+                        <?= $contenu[1] ?>
+                    </h3>
+                    <button type="button">Code Moi</button>
+                </div>
+            </div>
+
+            <?php
+            }
+            ?>
+<!-- SAUVEGARDE DE LA DIV QUE J'ESSAYE D'AUTOMATISER EN PHP
+
             <div class="profil">
                 <div class="avatar">
                     <img src="https://www.cofondateur.fr/assets/img/testi_marc.jpg" alt="woman">
                 </div>
                 <div id="descrip">
                     <h2><i>Name</i></h2><h3>Lorem ipsum dolor sit amet consectetur...
-                    </h3>
+                </h3>
                     <button type="button">Code Moi</button>
                 </div>
             </div>
-            <div class="profil">
+ -->
+     <!--       <div class="profil">
                 <div class="avatar">
                     <img src="https://www.cofondateur.fr/assets/img/testi_sibylle.jpg" alt="Man1">
                 </div>
@@ -69,6 +97,7 @@
                     <button type="button">Code Moi</button>
                 </div>
             </div>
+    -->
         </div>
     </div>
             
