@@ -1,48 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styleBarresRecherche.css">
-    <link rel="stylesheet" href="stylenav.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-    <title>Recherche</title>
 
-
-</head>
-<body>
-    <header>
-
-
-    <nav>
-        <ul>
-            <li><a href="">LOGO</a></li>
-        </ul>
-
-        <ul id="menu">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="barreRecherche.html">Search</a></li>
-            <li>Burger
-                <ul id="burger">
-                    <li><a href="">Settings</a></li>
-                    <li><a href="">help</a></li>
-                    <li><a href="message.html">Message</a></li>
-                    <li><a href="index.html">Log Out</a></li>
-                    
-                </ul>
-            
-            
-            </li>
-        </ul>
-    </nav>
-
-    </header>
-    
-
-
-
-
+<?php
+require 'header.php';
+?>
+    <body>
     <main>
 
    <div id="boxrecherche">

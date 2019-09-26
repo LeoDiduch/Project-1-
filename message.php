@@ -1,78 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="resultat.css">
-    <link rel="stylesheet" href="stylenav.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-    <title>Document</title>
-</head>
-
-<header>
-    <nav>
-        <ul>
-            <li><a href="">LOGO</a></li>
-        </ul>
-
-        <ul id="menu">
-            <a href="home.html"><li>Home</li></a>
-            <li><a href="barresRecherche.html">Search</a></li>
-            <li>Menu
-                <ul id="burger">
-                    <li><a href="">Settings</a></li>
-                    <li><a href="">help</a></li>
-                    <li><a href="message.html">Message</a></li>
-                    <li><a href="index.html">Log Out</a></li>
-                    
-                </ul>
-            
-            
-            </li>
-        </ul>
-    </nav>
-
-</header>
-
-
-
-
+<?php
+require 'header.php';
+?>
 <body>
-    <div id="contenu">
-        <div id="milieu de page">
-            <div class="profil">
-                <div class="avatar">
-                    <img src="https://www.cofondateur.fr/assets/img/testi_marc.jpg" alt="woman">
-                </div>
-                <div id="descrip">
-                    <h2><i>Name</i></h2><h3>Lorem ipsum dolor sit amet consectetur...
-                    </h3>
-                    <button type="button">Code Moi</button>
-                </div>
-            </div>
-            <div class="profil">
-                <div class="avatar">
-                    <img src="https://www.cofondateur.fr/assets/img/testi_sibylle.jpg" alt="Man1">
-                </div>
-                <div id="descrip">
-                    <h2><i>Name</i></h2><h3>Lorem ipsum dolor sit amet consectetur...</h3>
-                    <button type="button">Code Moi</button>
-                </div>
-            </div>
-            <div class="profil">
-                <div class="avatar">
-                    <img src="https://www.cofondateur.fr/assets/img/testi_charles.jpg" alt="Man2">
-                </div>
-                <div id="descrip">
-                    <h2><i>Name</i></h2><h3>Lorem ipsum dolor sit amet consectetur...</h3>
-                    <button type="button">Code Moi</button>
-                </div>
-            </div>
-        </div>
-    </div>
-            
-
     <div id="contact">
         <ul>
             <li ><span class="center"><a href="message.html"> patrick</a></span> <img src="https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/17626096_1123132934465589_5087028253921373571_n.jpg?_nc_cat=108&_nc_oc=AQn372nL-XcWXjTMv1BoY2DD8DpT7vMWJhzDqG3Mj_9SVfzhAOQ7ljgs950aPZi77jM&_nc_ht=scontent-frx5-1.xx&oh=337dd72beb2e70fafa0bcaa1f4a7c10c&oe=5E08FE47" alt=""></li>
@@ -88,7 +17,19 @@
         </ul>
         <input id="recherche" type="type here" placeholder="recherche">
     </div>
-            
+
+    <div id="discussion">
+        <span class="envoi">bonjour</span>
+        <div class="divreçu"><span class="reçu">bonjour</span></div>
+        <span class="envoi">comment allez vous?</span>
+
+    </div>
+    
+    
+    
+    <textarea name="text" placeholder ="tape here..." id="" cols="30" rows="10"></textarea>
+
+
 
     <footer>
         <ul id="footerlink">
@@ -118,9 +59,7 @@
 
 
 
-            
-        
-        </li>
-    </ul>   
+
+
 </body>
 </html>

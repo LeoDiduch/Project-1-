@@ -1,51 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="stylemessagerie.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-    <title>Messagerie</title>
-</head>
 
-
-
-
-
+<?php
+require 'header.php';
+?>
 <body>
-
-
-
-    <header>
-
-
-    <nav>
-        <ul>
-            <li><a href="">LOGO</a></li>
-        </ul>
-
-        <ul id="menu">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="barresRecherche.html">Search</a></li>
-            <li>Menu
-                <ul id="burger">
-                    <li><a href="">Settings</a></li>
-                    <li><a href="">help</a></li>
-                    <li><a href="">Message</a></li>
-                    <li><a href="index.html">Log Out</a></li>
-                    
-                </ul>
+    <div id="contenu">
+        <div id="milieu de page">
+            <div class="profil">
+                <div class="avatar">
+                    <img src="https://www.cofondateur.fr/assets/img/testi_marc.jpg" alt="woman">
+                </div>
+                <div id="descrip">
+                    <h2><i>Name</i></h2><h3>Lorem ipsum dolor sit amet consectetur...
+                    </h3>
+                    <button type="button">Code Moi</button>
+                </div>
+            </div>
+            <div class="profil">
+                <div class="avatar">
+                    <img src="https://www.cofondateur.fr/assets/img/testi_sibylle.jpg" alt="Man1">
+                </div>
+                <div id="descrip">
+                    <h2><i>Name</i></h2><h3>Lorem ipsum dolor sit amet consectetur...</h3>
+                    <button type="button">Code Moi</button>
+                </div>
+            </div>
+            <div class="profil">
+                <div class="avatar">
+                    <img src="https://www.cofondateur.fr/assets/img/testi_charles.jpg" alt="Man2">
+                </div>
+                <div id="descrip">
+                    <h2><i>Name</i></h2><h3>Lorem ipsum dolor sit amet consectetur...</h3>
+                    <button type="button">Code Moi</button>
+                </div>
+            </div>
+        </div>
+    </div>
             
-            
-            </li>
-        </ul>
-    </nav>
-
-    </header>
-
-
-
 
     <div id="contact">
         <ul>
@@ -62,19 +52,7 @@
         </ul>
         <input id="recherche" type="type here" placeholder="recherche">
     </div>
-
-    <div id="discussion">
-        <span class="envoi">bonjour</span>
-        <div class="divreçu"><span class="reçu">bonjour</span></div>
-        <span class="envoi">comment allez vous?</span>
-
-    </div>
-    
-    
-    
-    <textarea name="text" placeholder ="tape here..." id="" cols="30" rows="10"></textarea>
-
-
+            
 
     <footer>
         <ul id="footerlink">
@@ -104,7 +82,9 @@
 
 
 
-
-
+            
+        
+        </li>
+    </ul>   
 </body>
 </html>
