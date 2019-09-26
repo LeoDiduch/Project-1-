@@ -113,10 +113,11 @@ nav ul ul {
 
 #contact {
     float: left;
-    height: 80vh;
+    height: 100vh;
     border-style: solid;
     border-width: 1px 1px 0 1px;
     width: 20%;
+    background-color: white;
 }
 
 #contact ul {
@@ -146,36 +147,46 @@ nav ul ul {
 
 #recherche {
     width: calc(100% - 4px);
-    bottom: 10px;
+    bottom: 0;
+    position: absolute;
 }
 
 
 
 
 /*messagerie*/
+#mainContainer {
+    display: flex;
+}
 
-textarea {
+
+#textMessagerie {
     bottom: 0;
-    width: 100%;
+    width: 80%;
+    height: 10%;
+    position: fixed;
+    margin-left: 20%;
 }
 
 #discussion {
-    padding-top:5vh;
-    height: 100%;
+    width: 80%;
+    margin-top: 6vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 10%;
 }
 
 #discussion span {
-    margin-top: 2vh;
     padding: 10px;
 }
 
 .envoi {
     background-color: #ce6f5e23;
-    border-radius: 4%;
+    border-radius: 15px;
     justify-content: flex-end;
-    width: 30%;
+    float: right;
 }
 
 .reçu {
@@ -188,8 +199,6 @@ textarea {
     display: flex;
     justify-content: flex-end;
 }
-
-
 
 
 /*footer*/
