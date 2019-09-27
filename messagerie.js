@@ -59,11 +59,19 @@ const appendReponse = msg => {
 
 
 const listeEmoji = document.getElementById('pageEmote');
+let ouvert = false;
 
 listeEmoji.addEventListener('click', () => {
-    display = document.getElementById(listeEmoji);
-    display.setAttribute(display, block);
+    if (ouvert) {
+    pageEmoji.style.display = "none";
+    ouvert = false;
+    }
 });
 
+listeEmoji.addEventListener('click', () => {
+    pageEmoji.style.display = "block";
+    ouvert = true;
+
+});
 
 

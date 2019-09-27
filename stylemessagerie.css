@@ -207,6 +207,15 @@ nav ul ul {
 
 #pageEmoji {
     display: none;
+    position: absolute;
+    background-color: white;
+    bottom: 120%;
+    border: solid 1px;
+    max-height: 2000%;
+}
+
+#pageEmoji table tbody tr th img {
+    height: 20px;
 }
 
 #discussion {
@@ -216,7 +225,7 @@ nav ul ul {
     flex-direction: column-reverse;
     bottom: 0;
     right: 0;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 .envoi {
