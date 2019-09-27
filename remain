@@ -1,0 +1,20 @@
+#discussion span {
+}
+
+.envoi {
+    background-color: #ce6f5e23;
+    border-radius: 4%;
+    justify-content: flex-end;
+    width: 30%;
+}
+
+.reçu {
+    background-color: #ce6f5ead;
+    border-radius: 4%;
+    text-align: right;
+}
+
+.divreçu {
+    display: flex;
+    justify-content: flex-end;
+}
