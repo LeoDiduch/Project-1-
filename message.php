@@ -49,8 +49,8 @@ require 'barreDeContact.php';
         </div>
 
 
-
-        <textarea id="textMessagerie" name="inputUser" placeholder ="tape here..." cols="30" rows="10"></textarea>
+        <div><textarea id="textMessagerie" name="inputUser" placeholder ="tape here..." cols="30" rows="10"></textarea></div>
+        
     </div>
         
     
