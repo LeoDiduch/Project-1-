@@ -163,7 +163,7 @@ footer {
     display: flex;
     background-color: #ce6f5e;
     justify-content: space-between;
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }

@@ -17,14 +17,26 @@
 
 
 
-    <header>
-
-
-    <?php 
-require 'header.php';
-?>
-
-    </header>
+<header>
+    <nav>
+        <ul>
+            <li><a href="">LOGO</a></li>
+        </ul>
+        <ul id="menu">
+            <li><a href="">Home</a></li>
+            <li><a href="barresRecherche.php">Search</a></li>
+            <li>Menu
+                <ul id="burger">
+                    <li><a href="">Settings</a></li>
+                    <li><a href="">help</a></li>
+                    <li><a href="message.php">Message</a></li>
+                    <li><a href="index.php">Log Out</a></li>
+                    
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
 
 
 
@@ -42,7 +54,7 @@ require 'barreDeContact.php';
     </div>
         
     
-<script>messagerie.js</script>
+<script src='messagerie.js'></script>
 
 
 
