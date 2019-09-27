@@ -23,7 +23,7 @@
                 <li>
                     <label for="motDePasse">Mot de passe: </label><input type="password" name="motDePasse" id="motDePasse" placeholder="Password">
                 </li><br>
-                <a href="home.html"><input type="submit" class="btn" value="Valider"></a>
+                <a href="home.php"><input type="submit" class="btn" value="Valider"></a>
             </ul>
         </nav>
     </div>
@@ -79,9 +79,9 @@
 
   <footer>
     <ul>
-      <li><a href="index.html">Acceuil</a></li>
-      <li><a href="contact.html">Contact us</a></li>
-      <li><a href="about.html">About</a></li>
+      <li><a href="index.php">Acceuil</a></li>
+      <li><a href="contact.php">Contact us</a></li>
+      <li><a href="about.php">About</a></li>
     </ul>
   </footer>
 

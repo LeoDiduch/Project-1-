@@ -16,13 +16,13 @@
         </ul>
         <ul id="menu">
             <li><a href="">Home</a></li>
-            <li><a href="barresRecherche.html">Search</a></li>
+            <li><a href="barresRecherche.php">Search</a></li>
             <li>Menu
                 <ul id="burger">
                     <li><a href="">Settings</a></li>
                     <li><a href="">help</a></li>
-                    <li><a href="message.html">Message</a></li>
-                    <li><a href="index.html">Log Out</a></li>
+                    <li><a href="message.php">Message</a></li>
+                    <li><a href="index.php">Log Out</a></li>
                     
                 </ul>
             </li>

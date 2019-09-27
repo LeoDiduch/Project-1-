@@ -35,43 +35,15 @@ require 'barreDeContact.php';
         <div id="discussion">
             
         </div>
+
+
+
         <textarea id="textMessagerie" name="inputUser" placeholder ="tape here..." cols="30" rows="10"></textarea>
     </div>
         
     
-    
+<script>messagerie.js</script>
 
-
-
-
-    <footer>
-        <ul id="footerlink">
-            <li><a href="">Home</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">FAQ</a></li>
-            <li><a href="">Terms</a></li>
-            <li><a href="">About</a></li>
-        </ul>
-            
-        <ul id="footerlogo">
-            <a href="default.asp">
-                <img src="https://en.facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png" alt="FB">
-            </a>
-
-
-            <a href="default.asp">
-                <img src="https://instagram-brand.com/wp-content/uploads/2016/11/Instagram_AppIcon_Aug2017.png?w=300" alt="Insta">
-            </a>
-        </ul>
-
-
-
-
-
-    </footer>
-
-
-    <script src="messagerie.JS"></script>
 
 
 </body>
