@@ -49,8 +49,18 @@ require 'barreDeContact.php';
         </div>
 
 
-
-        <textarea id="textMessagerie" name="inputUser" placeholder ="tape here..." cols="30" rows="10"></textarea>
+        <div id="sendMessagerie">
+            <textarea id="textMessagerie" name="inputUser" placeholder ="tape here..." cols="30" rows="10"></textarea>
+            <div id="boiteEmoticone">
+            <ul>
+                <li><img class="emoteSelect" id="pageEmote" src="https://static.xx.fbcdn.net/images/emoji.php/v9/t88/1/32/1f600.png" alt="">
+                <div id="pageEmoji">bonjour</div>
+            </li>              
+                <li><img class="emoteSelect" src="https://img.icons8.com/material/4ac144/256/camera.png" alt=""></li>
+            </ul>
+                
+            </div>
+        </div>
     </div>
         
     

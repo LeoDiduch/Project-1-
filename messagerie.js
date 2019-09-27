@@ -58,4 +58,12 @@ const appendReponse = msg => {
 
 
 
+const listeEmoji = document.getElementById('pageEmote');
+
+listeEmoji.addEventListener('click', () => {
+    display = document.getElementById(listeEmoji);
+    display.setAttribute(display, block);
+});
+
+
 
