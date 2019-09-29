@@ -41,9 +41,9 @@ const appendReponse = msg => {
     let sierpinski
     if (msg === 'bonjour') {
         reponse = 'bonjour';
-    } else if (msg === 'avez vous des hobbies ?') {
+    } else if (msg.includes('hobbies')) {
         reponse = 'oui, j adore regarder tchoupi';
-    } else if (msg === 'quel âge avez vous ?') {
+    } else if (msg.includes('âge')) {
         reponse = 'j ai 42 ans';
     } else {
         reponse = 'je ne comprends pas votre question';
@@ -57,5 +57,11 @@ const appendReponse = msg => {
 
 
 
+
+const listeEmoji = document.getElementById('pageEmote');
+
+listeEmoji.addEventListener('click', () => {
+    pageEmoji.style.display = (pageEmoji.style.display === 'none') ? 'block' : 'none';
+});
 
 
