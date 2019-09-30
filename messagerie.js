@@ -1,3 +1,5 @@
+//message buble generation
+
 const message = document.getElementById("discussion");
 
 document.addEventListener('keydown', (event) => {
@@ -55,8 +57,36 @@ const appendReponse = msg => {
     message.appendChild(bulle);}
 
 
+//function emote page
+
+    const pageEmote = document.getElementById('containerEmote');
+    const page = document.createElement("div");
+    page.setAttribute('id', 'pageEmoji');
+    const table = document.createElement("table");
+    const ligne = document.createElement("tr");
+
+    const createEmote = numero => {
+        const item = document.createElement('th');
+        item.innerHTML = `&#x1F${numero}<div id="x1F${numero}"></div>`
 
 
+    }
+
+
+    const itemPerLine = 5
+
+    for (i = 0; i < itemPerLine; i++) {
+        ligne.appendChild(createEmote);
+    }
+
+    
+    table.appendChild(ligne);
+    page.appendChild(table);
+
+    pageEmote.appendChild(page);
+
+
+//function open pageEmote close page Emote
 
 const listeEmoji = document.getElementById('pageEmote');
 
