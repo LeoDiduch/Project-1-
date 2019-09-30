@@ -63,22 +63,22 @@ const appendReponse = msg => {
     const page = document.createElement("div");
     page.setAttribute('id', 'pageEmoji');
     const table = document.createElement("table");
+
+
     const ligne = document.createElement("tr");
-
-    const createEmote = numero => {
-        const item = document.createElement('th');
-        item.innerHTML = `&#x1F${numero}<div id="x1F${numero}"></div>`
-
-
-    }
-
-
     const itemPerLine = 5
 
-    for (i = 0; i < itemPerLine; i++) {
-        ligne.appendChild(createEmote);
-    }
+    function createLine(itemPerLine, startID) {
 
+        for (i=0; i < itemPerLine; i++) {
+
+            const item = document.createElement('th');
+            item.innerHTML = `&#x1F${startID}<div id="x1F${startID}"></div>`;
+            startID++;
+
+            ligne.appendChild(item);
+        }
+    };
     
     table.appendChild(ligne);
     page.appendChild(table);
