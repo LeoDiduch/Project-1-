@@ -1,3 +1,4 @@
+<!-- commentaire test -->
 <?php 
 require 'header.php';
 ?>
