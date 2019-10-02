@@ -64,25 +64,36 @@ const appendReponse = msg => {
     page.setAttribute('id', 'pageEmoji');
     const table = document.createElement("table");
 
+    const itemPerLine = 5;
+    let startID = 600;
+    const numberLigne = 20;
 
-    const ligne = document.createElement("tr");
-    const itemPerLine = 5
+    let createLine = () => {
+        return line = document.createElement('tr');
+    };
 
-    function createLine(itemPerLine, startID) {
+
+    let fullfillLine = (itemPerLine, startID) => {
 
         for (i=0; i < itemPerLine; i++) {
-
+            const ligne = createLine()
             const item = document.createElement('th');
             item.innerHTML = `&#x1F${startID}<div id="x1F${startID}"></div>`;
             startID++;
 
             ligne.appendChild(item);
-        }
+        } 
     };
-    
-    table.appendChild(ligne);
-    page.appendChild(table);
 
+
+
+    for (let i = 0; i < numberLigne; i++) {
+        const ligne = fullfillLine(itemPerLine, startID);
+        startID += 5;
+        table.appendChild(ligne);
+    }
+
+    page.appendChild(table);
     pageEmote.appendChild(page);
 
 
@@ -91,7 +102,7 @@ const appendReponse = msg => {
 const listeEmoji = document.getElementById('pageEmote');
 
 listeEmoji.addEventListener('click', () => {
-    pageEmoji.style.display = (pageEmoji.style.display === 'none') ? 'block' : 'none';
+    pageEmoji.style.display = (pageEmoji.style.display === 'block') ? 'none' : 'block';
 });
 
 
