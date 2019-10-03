@@ -15,7 +15,7 @@
             <li><a href="">LOGO</a></li>
         </ul>
         <ul id="menu">
-            <li><a href="">Home</a></li>
+            <li><a href="home.php">Home</a></li>
             <li><a href="barresRecherche.php">Search</a></li>
             <li>Menu
                 <ul id="burger">

@@ -1,24 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="home.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="stylecarouselcontactfavoris.css">
-    <title>Home</title>
-</head>
-
-
-
-
-
-<body>
-
-
-
-<?php 
+<?php
+$title = "Home";
+$css = "home.css";
+$css2 = "stylecarouselcontactfavoris.css";
 require 'header.php';
 ?>
 
@@ -63,13 +46,11 @@ require 'header.php';
 
           <figure class="image">
                 <a href=""> <img class="image-item" src="https://www.fc-photos.com/wp-content/uploads/2016/09/fc-photos-Weynacht-0001.jpg" alt="Profil1"></a>
-        
                  <figcaption class="image-description"> Hobbies: sportif, gameuse,...</figcaption>
           </figure>
                
                <figure class="image">
                 <a href=""> <img class="image-item" src="https://image.freepik.com/vecteurs-libre/profil-avatar-femme-icone-ronde_24640-14042.jpg" alt="Profil2"></a>
-        
                  <figcaption class="image-description"> Hobbies: Lectures, gameuse,...</figcaption>
                </figure>
                
@@ -102,7 +83,6 @@ require 'barreDeContact.php';
             <a href="default.asp">
                 <img src="https://en.facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png" alt="FB">
             </a>
-
 
             <a href="default.asp">
                 <img src="https://instagram-brand.com/wp-content/uploads/2016/11/Instagram_AppIcon_Aug2017.png?w=300" alt="Insta">
