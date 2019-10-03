@@ -1,3 +1,5 @@
+//message buble generation
+
 const message = document.getElementById("discussion");
 
 document.addEventListener('keydown', (event) => {
@@ -41,7 +43,7 @@ const appendReponse = msg => {
     let sierpinski
     if (msg === 'bonjour') {
         reponse = 'bonjour';
-    } else if (msg === 'avez vous des hobbies ?') {
+    } else if (msg.includes('hobbies') ) {
         reponse = 'oui, j adore regarder tchoupi';
     } else if (msg === 'quel âge avez vous ?') {
         reponse = 'j ai 42 ans';
@@ -55,7 +57,52 @@ const appendReponse = msg => {
     message.appendChild(bulle);}
 
 
+//function emote page
+
+    const pageEmote = document.getElementById('containerEmote');
+    const page = document.createElement("div");
+    page.setAttribute('id', 'pageEmoji');
+    const table = document.createElement("table");
+
+    const itemPerLine = 5;
+    let startID = 600;
+    const numberLigne = 20;
+
+    let createLine = () => {
+        return line = document.createElement('tr');
+    };
 
 
+    let fullfillLine = (itemPerLine, startID) => {
+
+        for (i=0; i < itemPerLine; i++) {
+            const ligne = createLine()
+            const item = document.createElement('th');
+            item.innerHTML = `&#x1F${startID}<div id="x1F${startID}"></div>`;
+            startID++;
+
+            ligne.appendChild(item);
+        } 
+    };
+
+
+
+    for (let i = 0; i < numberLigne; i++) {
+        const ligne = fullfillLine(itemPerLine, startID);
+        startID += 5;
+        table.appendChild(ligne);
+    }
+
+    page.appendChild(table);
+    pageEmote.appendChild(page);
+
+
+//function open pageEmote close page Emote
+
+const listeEmoji = document.getElementById('pageEmote');
+
+listeEmoji.addEventListener('click', () => {
+    pageEmoji.style.display = (pageEmoji.style.display === 'block') ? 'none' : 'block';
+});
 
 
