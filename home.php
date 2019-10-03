@@ -4,6 +4,12 @@
 require 'header.php';
 =======
 <?php
+<<<<<<< HEAD
+$title = "Home";
+$css = "home.css";
+$css2 = "stylecarouselcontactfavoris.css";
+require 'header.php';
+=======
 $title = 'home';
 $css = "home.css";
 $css2 = "stylecarouselcontactfavoris.css";
@@ -51,13 +57,11 @@ include 'header.php';
 
           <figure class="image">
                 <a href=""> <img class="image-item" src="https://www.fc-photos.com/wp-content/uploads/2016/09/fc-photos-Weynacht-0001.jpg" alt="Profil1"></a>
-        
                  <figcaption class="image-description"> Hobbies: sportif, gameuse,...</figcaption>
           </figure>
                
                <figure class="image">
                 <a href=""> <img class="image-item" src="https://image.freepik.com/vecteurs-libre/profil-avatar-femme-icone-ronde_24640-14042.jpg" alt="Profil2"></a>
-        
                  <figcaption class="image-description"> Hobbies: Lectures, gameuse,...</figcaption>
                </figure>
                
@@ -88,6 +92,10 @@ require 'barreDeContact.php';
             <a href="default.asp">
                 <img src="https://en.facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png" alt="FB">
             </a>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 6f6ac591769881338623f324572d373f8b452fe3
             <a href="default.asp">
                 <img src="https://instagram-brand.com/wp-content/uploads/2016/11/Instagram_AppIcon_Aug2017.png?w=300" alt="Insta">
             </a>
