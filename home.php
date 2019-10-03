@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+<!-- commentaire test -->
+<?php 
+require 'header.php';
+?>
 <?php
 $title = 'Home';
 $css = "home.css";
