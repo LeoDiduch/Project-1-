@@ -1,3 +1,5 @@
+//message buble generation
+
 const message = document.getElementById("discussion");
 
 document.addEventListener('keydown', (event) => {
@@ -38,10 +40,9 @@ const appendMessage = msg => {
 
 const appendReponse = msg => {
     let reponse
-    let sierpinski
     if (msg === 'bonjour') {
         reponse = 'bonjour';
-    } else if (msg === 'avez vous des hobbies ?') {
+    } else if (msg.includes('hobbies') ) {
         reponse = 'oui, j adore regarder tchoupi';
     } else if (msg === 'quel âge avez vous ?') {
         reponse = 'j ai 42 ans';
@@ -54,6 +55,39 @@ const appendReponse = msg => {
 
     message.appendChild(bulle);}
 
+
+//function emote page
+
+    const pageEmote = document.getElementById('containerEmote');
+    const page = document.createElement("div");
+    page.setAttribute('id', 'pageEmoji');
+
+    let numberItem = 50;
+    let startID = 600;
+
+
+    let fullfillBox = (numberItem, startID) => {
+
+        for (i=0; i < numberItem; i++) {
+            const item = document.createElement('div');
+            item.setAttribute('class', 'emoji');
+            item.innerHTML = `&#x1F${startID}<div id="x1F${startID}"></div>`;
+            startID++;
+            page.appendChild(item);
+        } 
+    };
+
+    fullfillBox(numberItem, startID);
+    pageEmote.appendChild(page);
+
+
+//function open pageEmote close page Emote
+
+const listeEmoji = document.getElementById('pageEmote');
+
+listeEmoji.addEventListener('click', () => {
+    pageEmoji.style.display = (pageEmoji.style.display === 'flex') ? 'none' : 'flex';
+});
 
 
 

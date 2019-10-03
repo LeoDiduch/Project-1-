@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
+      <module fileurl="file://$PROJECT_DIR$/.idea/Project-1-.iml" filepath="$PROJECT_DIR$/.idea/Project-1-.iml" />
+=======
       <module fileurl="file://$PROJECT_DIR$/.idea/Adopte-un-dev.iml" filepath="$PROJECT_DIR$/.idea/Adopte-un-dev.iml" />
+>>>>>>> 23221c224c6b474c4e613a6dbbebc8eeecf8478e
     </modules>
   </component>
 </project>

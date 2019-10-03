@@ -104,7 +104,7 @@ require "header.php";
                 <img src="https://instagram-brand.com/wp-content/uploads/2016/11/Instagram_AppIcon_Aug2017.png?w=300" alt="Insta">
             </a>
         </ul>
-
+      <script src="resultat.js"></script>
     </footer>
 
 </body>

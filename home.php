@@ -1,3 +1,4 @@
+
 <?php
 
 $title = "Home";
@@ -29,7 +30,16 @@ require 'header.php';
                 </article>
         
                 <article>
-                    <img class="imagehome" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGyoQgYDEAcDd0C8OyOzRa9752dpeXnxlRDPwQo-T7t_-V2pqmUg" alt>
+                    <img class="imagehome" src<<<<<<< test
+87
+ 
+​
+88
+ 
+=======
+89
+ 
+>>>>>>> dev="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGyoQgYDEAcDd0C8OyOzRa9752dpeXnxlRDPwQo-T7t_-V2pqmUg" alt>
                     <h2>Wilder du 59:</h2><h3>Dernière connexion: Il y a 2 minutes </h3>
                 </article>
         

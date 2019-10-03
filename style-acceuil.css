@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     font-family: 'Raleway', sans-serif;
+    list-style-type: none;
 }
 
 #milieupage {
@@ -32,9 +33,7 @@
     }
 
     .menu {
-        display: flex;
-        justify-content: space-between;
-        background-color: #ce6e5ec0;
+        justify-content: space-between; 
     }
 
     body div nav ul li {
@@ -50,6 +49,10 @@
         padding: 0.2rem;
         text-align: center;
         float: right;
+    }
+
+    #pseudo, #motDePasse {
+        justify-content: flex-end;
     }
 
     .menu nav {
@@ -68,6 +71,61 @@
     .titre-milieuPage {
         font-weight: 100;
     }
+
+    .banner {
+        position: relative;
+        background-color: #ce6e5ec0;
+        width: 100%;
+        height: 20vh;
+      }
+      
+      .diamond {
+        position: absolute;
+        background-color: rgba(0,0,0,.1);
+        width: 80%;
+        height: 20vh;
+        right: 0;
+        -moz-transition: width 2s;
+        -o-transition: width 2s;
+        -webkit-transition: width 2s;
+        transition: width 2s;
+      }
+      
+      .diamond:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 0;
+        left: -10vh;
+        border-right: 10vh solid rgba(0,0,0,.1);
+        border-bottom: 10vh solid rgba(0,0,0,0);
+      }
+      
+      .diamond div:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        bottom: 0;
+        left: -10vh;
+        border-right: 10vh solid rgba(0,0,0,.05);
+        border-top: 10vh solid rgba(0,0,0,0);
+      }
+      
+      .banner:hover .diamond {
+        width: 40%;
+      }
+    
+      .logodesktop {
+        height: 20vh;
+        width:8%;
+      }
+
+      .logoresponsive {
+          display: none;
+      }
+
 /*--------- SLIDER -------------------*/
 
     #slider {
@@ -206,15 +264,15 @@
         text-decoration: none;
     }
 
-    .menu h1 {
-        font-size: 2rem;
-        padding: 20px 0 0 30px;
-    }
-
     .menu {
-        display: flex;
         justify-content: space-between;
         background-color: #ce6e5ec0;
+    }
+
+    #pseudo, #motDePasse {
+        justify-content: flex-end;
+        height: 25px;
+        width: 45%
     }
 
     body div nav ul li {
@@ -235,17 +293,19 @@
     .menu nav {
         padding: 5px;
         width: auto;
+        height: 20vh;
     }
 
-    #pseudo {
-        height: 25px;
-        width: 50%;
+    .logoresponsive {
+        height: 20vh;
+        width:20%;
+        position: absolute;
+      }
+
+    .logodesktop {
+        display: none;
     }
 
-    #motDePasse {
-        height: 25px;
-        width: 48%;
-    }
 
 /*--------- SLIDER -------------------*/
 
@@ -300,8 +360,6 @@
 
 
 /*-------------ANCIEN MEMBRE---------------------*/
-
-
 
 
     .profil{
@@ -379,6 +437,5 @@
         padding: 0.7rem;
     }
 }
-
 
 

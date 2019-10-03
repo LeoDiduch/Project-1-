@@ -18,9 +18,13 @@ $css2 = "";
 
 <!-----NAV ET CONNECTION---------->
 
-    <div class="menu">
-        <h1>Adopte un dev</h1>
-        <nav>
+<div class="banner">
+    <div class="diamond">
+
+      <div class="menu">
+          <img class="logoresponsive" src="https://hcti.io/v1/image/a0555e82-c66e-410f-b814-c332ca4437c9">
+        <nav class="navacceuil">
+          
             <ul>
                 <li>
                     <label for="pseudo">Pseudo: </label><input type="text" name="pseudo" id="pseudo" placeholder="Pseudo">
@@ -33,6 +37,10 @@ $css2 = "";
             </ul>
         </nav>
     </div>
+        <div></div>
+      </div>
+        <img class="logodesktop" src="https://hcti.io/v1/image/a0555e82-c66e-410f-b814-c332ca4437c9">
+  </div>
 
 <!----------SLIDER----------------->
 
