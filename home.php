@@ -1,25 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="home.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="stylecarouselcontactfavoris.css">
-    <title>Home</title>
-</head>
-
-
-
-
-
-<body>
-
-
-
-<?php 
-require 'header.php';
+<?php
+$title = 'home';
+$css = "home.css";
+$css2 = "stylecarouselcontactfavoris.css";
+include 'header.php';
 ?>
 
     <main>
@@ -56,7 +39,6 @@ require 'header.php';
             </div>
           </div>
 
-
     <h4>Vous partagez des points communs...</h4>
 
         <div id="pointscommuns">
@@ -83,11 +65,9 @@ require 'header.php';
     </main>
 
 
-    <?php
+<?php
 require 'barreDeContact.php';
 ?>
-
-
 
     <footer>
         <ul id="footerlink">
@@ -102,22 +82,11 @@ require 'barreDeContact.php';
             <a href="default.asp">
                 <img src="https://en.facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png" alt="FB">
             </a>
-
-
             <a href="default.asp">
                 <img src="https://instagram-brand.com/wp-content/uploads/2016/11/Instagram_AppIcon_Aug2017.png?w=300" alt="Insta">
             </a>
         </ul>
 
-
-
-
-
     </footer>
-
-
-
-
-
 </body>
 </html>
