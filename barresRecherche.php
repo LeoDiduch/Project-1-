@@ -1,5 +1,7 @@
-
 <?php
+$title = "Recherche";
+$css = "styleBarresRecherche.css";
+$css2 = "stylenav.css";
 require 'header.php';
 ?>
     <body>
@@ -50,7 +52,7 @@ require 'header.php';
         <input class="Centres" type="text"/>
 
       <p></p>
-      <a href="resultat.html" target="_blank"> <input type="button" value="Rechercher" class="boutonRecherche"> </a>
+      <a href="resultat.php" target="_blank"> <input type="button" value="Rechercher" class="boutonRecherche"> </a>
 
       </div>
 

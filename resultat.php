@@ -1,10 +1,12 @@
 <?php
-require_once 'profil.php';
+
+include "profil.php";
 $title = "Resultat de recherche";
 $css = "resultat.css";
 $css2 = "stylenav.css";
 require "header.php";
 ?>
+
 
 <body>
     <div id="contenu">

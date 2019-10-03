@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,11 +13,15 @@
 
 
 
+=======
+<?php
+$title = "Messagerie";
+$css = "stylemessagerie.css";
+require "header.php";
+?>
+>>>>>>> 6f6ac591769881338623f324572d373f8b452fe3
 
 <body>
-
-
-
     <header>
         <nav>
             <ul>
@@ -38,9 +43,7 @@
         </nav>
     </header>
 
-
-
-    <?php
+<?php
 require 'barreDeContact.php';
 ?>
 
