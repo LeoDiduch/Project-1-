@@ -1,13 +1,11 @@
-<<<<<<< HEAD
-<!-- commentaire test -->
-<?php 
-require 'header.php';
-?>
+
 <?php
-$title = 'Home';
+
+$title = "Home";
 $css = "home.css";
 $css2 = "stylecarouselcontactfavoris.css";
-include 'header.php';
+require 'header.php';
+
 ?>
 
     <main>
@@ -32,7 +30,16 @@ include 'header.php';
                 </article>
         
                 <article>
-                    <img class="imagehome" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGyoQgYDEAcDd0C8OyOzRa9752dpeXnxlRDPwQo-T7t_-V2pqmUg" alt>
+                    <img class="imagehome" src<<<<<<< test
+87
+ 
+​
+88
+ 
+=======
+89
+ 
+>>>>>>> dev="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGyoQgYDEAcDd0C8OyOzRa9752dpeXnxlRDPwQo-T7t_-V2pqmUg" alt>
                     <h2>Wilder du 59:</h2><h3>Dernière connexion: Il y a 2 minutes </h3>
                 </article>
         
@@ -85,6 +92,7 @@ require 'barreDeContact.php';
             <a href="default.asp">
                 <img src="https://en.facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png" alt="FB">
             </a>
+
             <a href="default.asp">
                 <img src="https://instagram-brand.com/wp-content/uploads/2016/11/Instagram_AppIcon_Aug2017.png?w=300" alt="Insta">
             </a>
