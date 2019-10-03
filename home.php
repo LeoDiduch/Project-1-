@@ -1,15 +1,10 @@
 <?php
-<<<<<<< HEAD
+
 $title = "Home";
 $css = "home.css";
 $css2 = "stylecarouselcontactfavoris.css";
 require 'header.php';
-=======
-$title = 'home';
-$css = "home.css";
-$css2 = "stylecarouselcontactfavoris.css";
-include 'header.php';
->>>>>>> 6f6ac591769881338623f324572d373f8b452fe3
+
 ?>
 
     <main>
@@ -87,10 +82,7 @@ require 'barreDeContact.php';
             <a href="default.asp">
                 <img src="https://en.facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png" alt="FB">
             </a>
-<<<<<<< HEAD
 
-=======
->>>>>>> 6f6ac591769881338623f324572d373f8b452fe3
             <a href="default.asp">
                 <img src="https://instagram-brand.com/wp-content/uploads/2016/11/Instagram_AppIcon_Aug2017.png?w=300" alt="Insta">
             </a>

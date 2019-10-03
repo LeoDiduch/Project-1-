@@ -1,36 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="resultat.css">
-    <link rel="stylesheet" href="stylenav.css">
-    <link rel="stylesheet" href="creationProfil.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="">LOGO</a></li>
-            </ul>
+<?php
+$title = "Création de profil";
+$css = "stylenav.css";
+$css2 = "creationProfil.css";
+include 'header.php';
+require_once 'connec.php';
 
-            <ul id="menu">
-                <a href="home.html"><li>Home</li></a>
-                <li><a href="barresRecherche.html">Search</a></li>
-                <li>Menu
-                    <ul id="burger">
-                        <li><a href="">Settings</a></li>
-                        <li><a href="">help</a></li>
-                        <li><a href="message.html">Message</a></li>
-                        <li><a href="index.html">Log Out</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
+function text_input($data)
+{
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlentities($data);
+    return $data;
+}
+
+// ------------ CONNEXION A LA BASE DE DONNEE----------------
+
+$pdo = new PDO(DNS, USER, PASS);
+try {
+    $dbh = new PDO(DNS, USER, PASS);
+} catch (PDOException $e) {
+    print "Erreur !: " . $e->getMessage() . "<br/>";
+    die();
+}
+
+$pseudoError = $mailError = $passwordError = $passwordRepeatError = $msgError  = "";
+$pseudo = $mail = $password = $password_repeat = $description = "";
+
+// -------------VERIFICATION DES CHAMPS-----------------
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    if (empty($_POST["pseudo"])) {
+        $pseudoError = "Le nom est obligatoire";
+    } else {
+        $pseudo = text_input($_POST["pseudo"]);
+    }
+    if (!preg_grep("/^[a-zA-Z ]*$/" , explode(" ",$pseudo))) {
+        $pseudoError = "Votre nom doit comporter uniquement des lettres et espaces !";
+    }
+
+    if (empty($_POST["mail"])) {
+        $mailError = "Le mail est obligatoire";
+    } elseif (filter_var($mail, FILTER_VALIDATE_EMAIL)) {
+        $mailError = "Votre adresse n'est pas valide.";
+    } else {
+        $mail = text_input($_POST["mail"]);
+    }
+
+    if (empty($_POST["description"])) {
+        $descriptionError = "Le message est obligatoire";
+    } else {
+        $description = text_input($_POST["description"]);
+    }
+    if (empty($_POST["password"])) {
+        $passwordError = "Le mot de passe est obligatoire";
+    } else {
+        $password = htmlentities($_POST["password"]);
+    }
+
+    if (empty($_POST["password_repeat"])) {
+        $passwordError = "Le mot de passe est obligatoire";
+    } else {
+        $password = htmlentities($_POST['password']);
+    }
+
+    if ($password === $password_repeat){
+        $password = htmlentities($_POST['password']);
+    } else {
+        $passwordRepeatError = "Les mots de passes ne correspondent pas";
+    }
+// ------------ SI AUCUNE ERREUR, RENVOIE VERS LA PAGE HOME -----------------
+
+    if (empty($pseudoErr) && empty($mailErr) && empty($passwordError) && empty($passwordRepeatError)) {
+        header("location: home.php");
+    } else {
+        $error = "Des erreurs se sont produites dans vos champs, vérifiez à nouveau s'il vous plait";
+    }
+}
+
+
+?>
+
+<body>
 
     <main class="creationProfil">
         <h1>
@@ -41,14 +92,28 @@
                 <label for="pseudo">
                     Veuillez choisir un pseudo:
                 </label>
-                <input type="text" name="pseudo" placeholder="Pseudo"><br><br>
+                <input type="text" name="pseudo" placeholder="Pseudo"><br>
+                <span class="msgError"><?= $pseudoError ?></span><br>
+
+                <label for="mail">
+                    Indiquez votre mail:
+                </label>
+                <input type="email" name="mail" placeholder="Mail" id="mail"><br>
+                <span class="msgError"> <?= $mailError ?></span><br>
 
                 <label for="password">
                     Choisissez un mot de passe:
                 </label>
-                <input type="password" name="password" placeholder="Password"><br><br>
+                <input type="password" name="password" placeholder="Password"><br>
+                <span class="msgError"><?= $passwordError ?></span><br>
 
-                <label for="">
+                <label for="password">
+                    Veuillez répéter votre mot de passe:
+                </label>
+                <input type="password" name="password_repeat" placeholder="Password"><br>
+                <span class="msgError"><?= $passwordError ?></span><br>
+
+                <label for="description">
                     Décrivez vous en quelques lignes:
                 </label>
                 <textarea name="description" id="description" cols="30" rows="5">
