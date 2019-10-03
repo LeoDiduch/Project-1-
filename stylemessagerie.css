@@ -211,11 +211,18 @@ nav ul ul {
     background-color: white;
     bottom: 120%;
     border: solid 1px;
-    max-height: 2000%;
+    max-height: 1000%;
+    flex-wrap: wrap;
+    max-width: 10%;
 }
 
-#pageEmoji table tbody tr th img {
-    height: 20px;
+#pageEmoji div {
+    padding: 1px;
+}
+
+#pageEmoji div:hover {
+    cursor: pointer;
+    padding: 2px;
 }
 
 #discussion {
