@@ -121,19 +121,18 @@ nav ul ul {
 /*barre de contact*/
 
 #contact {
-    padding-top: 5%;
-    position: fixed;
-    height: 100%;
+    float: left;
+    height: 100vh;
     border-style: solid;
     border-width: 1px 1px 0 1px;
-    width: 10%;
-    left: 0;
-    top: 0;
+    width: 20%;
+    background-color: white;
 }
 
 #contact ul {
     margin-top: 50px;
     padding: 0px;
+    font-size: 1em;
 }
 
 #contact ul li {
@@ -142,6 +141,7 @@ nav ul ul {
     display:flex;
     flex-direction: row-reverse;
     justify-content: flex-end ;
+    padding: 5px;
 }
 
 #contact ul li img {
@@ -157,8 +157,9 @@ nav ul ul {
 
 #recherche {
     width: calc(100% - 4px);
-    bottom: 10px;
+    bottom: 0;
 }
+
 
 /*footer*/
 
