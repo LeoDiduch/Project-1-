@@ -40,7 +40,6 @@ const appendMessage = msg => {
 
 const appendReponse = msg => {
     let reponse
-    let sierpinski
     if (msg === 'bonjour') {
         reponse = 'bonjour';
     } else if (msg.includes('hobbies') ) {
@@ -62,38 +61,23 @@ const appendReponse = msg => {
     const pageEmote = document.getElementById('containerEmote');
     const page = document.createElement("div");
     page.setAttribute('id', 'pageEmoji');
-    const table = document.createElement("table");
 
-    const itemPerLine = 5;
+    let numberItem = 50;
     let startID = 600;
-    const numberLigne = 20;
-
-    let createLine = () => {
-        return line = document.createElement('tr');
-    };
 
 
-    let fullfillLine = (itemPerLine, startID) => {
+    let fullfillBox = (numberItem, startID) => {
 
-        for (i=0; i < itemPerLine; i++) {
-            const ligne = createLine()
-            const item = document.createElement('th');
+        for (i=0; i < numberItem; i++) {
+            const item = document.createElement('div');
+            item.setAttribute('class', 'emoji');
             item.innerHTML = `&#x1F${startID}<div id="x1F${startID}"></div>`;
             startID++;
-
-            ligne.appendChild(item);
+            page.appendChild(item);
         } 
     };
 
-
-
-    for (let i = 0; i < numberLigne; i++) {
-        const ligne = fullfillLine(itemPerLine, startID);
-        startID += 5;
-        table.appendChild(ligne);
-    }
-
-    page.appendChild(table);
+    fullfillBox(numberItem, startID);
     pageEmote.appendChild(page);
 
 
@@ -102,7 +86,10 @@ const appendReponse = msg => {
 const listeEmoji = document.getElementById('pageEmote');
 
 listeEmoji.addEventListener('click', () => {
-    pageEmoji.style.display = (pageEmoji.style.display === 'block') ? 'none' : 'block';
+    pageEmoji.style.display = (pageEmoji.style.display === 'flex') ? 'none' : 'flex';
 });
+
+
+
 
 
